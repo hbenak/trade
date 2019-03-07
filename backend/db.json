@@ -1,0 +1,45 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "José Silva",
+      "email": "jsilva@empresa.com"
+    },
+    {
+      "id": 2,
+      "name": "Maria Silva",
+      "email": "msilva@empresa.com"
+    },
+    {
+      "name": "Humberto Silva",
+      "email": "1@1.com",
+      "id": 3
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "name": "Camiseta Preta",
+      "description": "Manga curta, gola careca, feito com algodão",
+      "photo": "https://benak.000webhostapp.com/assets/imgs/t-shirt-black.webp"
+    },
+    {
+      "id": 2,
+      "name": "Camiseta Cinza",
+      "description": "Manga curta, gola careca, feito com algodão",
+      "photo": "https://benak.000webhostapp.com/assets/imgs/t-shirt-grey.webp"
+    },
+    {
+      "id": 3,
+      "name": "Calça Jeans",
+      "description": "Corte reto, modelo destroyed, feito com jeans",
+      "photo": "https://benak.000webhostapp.com/assets/imgs/pant-jeans-destroyed.webp"
+    },
+    {
+      "id": 4,
+      "name": "Calça Preta",
+      "description": "Corte de alfaiataria, modelo jogger",
+      "photo": "https://benak.000webhostapp.com/assets/imgs/pant-black-jogger.webp"
+    }
+  ]
+}
