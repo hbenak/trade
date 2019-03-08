@@ -19,14 +19,12 @@ const initialState = {
 export default class Shelf extends Component {
   state = { ...initialState }
 
-  componentWillMount() {
+  //componentDidMount: uma unica chamada
+  //componentWillMount: pode fazer mais de uma chamada
+  componentDidMount() {
     axios(baseUrl).then(resp => {
       this.setState({ list: resp.data })
     })
-  }
-
-  loadProduct(product) {
-    window.location = '/product/'+product;
   }
 
   renderList() {
@@ -45,7 +43,7 @@ export default class Shelf extends Component {
     return this.state.list.map(product => {
       return (
         <li className="col-6 col-lg-4 col-xl-3 list-unstyled" key={product.id}>
-          <div className="my-1 border" onClick={() => this.loadProduct(product.id)}>
+          <div className="my-1 border" onClick={() => this.props.history.push('/product/'+product.id)}>
             <figure>
               <img src={product.photo} alt={product.name} className="w-100 h-auto" />
             </figure>

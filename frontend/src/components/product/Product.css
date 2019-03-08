@@ -1,0 +1,20 @@
+.custom-comments {
+	padding-bottom: 10px;
+	border-bottom: dashed 1px #ccc;
+}
+
+.custom-comments::before {
+	font-family: "FontAwesome";
+	content: "\f10d ";
+	color: #ccc;
+}
+
+.custom-comments::after {
+	font-family: "FontAwesome";
+	content: " \f10e";
+	color: #ccc;
+}
+
+.custom-comments:last-child {
+	border-bottom: 0;
+}
