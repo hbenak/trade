@@ -1,20 +1,51 @@
-.custom-comments {
-	padding-bottom: 10px;
-	border-bottom: dashed 1px #ccc;
+.description {
+	width: 100%;
 }
 
-.custom-comments::before {
-	font-family: "FontAwesome";
-	content: "\f10d ";
-	color: #ccc;
+.description h3 {
+	font-size: 28px;
+	margin-bottom: 32px;
 }
 
-.custom-comments::after {
-	font-family: "FontAwesome";
-	content: " \f10e";
-	color: #ccc;
+.description p {
+	font-size: 16px;
 }
 
-.custom-comments:last-child {
-	border-bottom: 0;
+.description pre {
+	font-size: 16px;
+	font-family: sans-serif;
+	color: #000;
+	white-space: pre-wrap;
+}
+
+.prod-condition {
+	font-size: 14px;
+	line-height: 14px;
+	color: #333;
+	margin: 0 0 16px 0;
+}
+
+.prod-title {
+	font-size: 24px;
+	line-height: 24px;
+	color: #333;
+	margin: 0 0 32px 0;
+}
+
+.prod-price {
+	font-size: 46px;
+	line-height: 46px;
+	color: #333;
+	margin: 0 0 32px 0;
+}
+
+.button-buy {
+	width: 240px;
+	height: 42px;
+	font-size: 16px;
+	line-height: 42px;
+	background-color: #3483fa;
+	color:  #FFF;
+	border-radius: 4px;
+	outline: none !important;
 }

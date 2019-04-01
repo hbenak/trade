@@ -1,11 +1,12 @@
 :root {
-    /* --bg-dark: #1A2F3A; */
+    /* --bg-yellow: #FEE600; */
+    --bg-yellow: #000;
     --bg-dark: #000;
 
-    --logo-height: 100px;
-    --header-height: 100px;
+    --logo-height: 32px;
+    --logo-width: 53px;
+    --header-height: 55px;
     --menu-top-height: 70px;
-    --aside-width: 225px;
     --footer-height: 40px;
 
     --shadow: 
@@ -23,29 +24,21 @@
 .app {
     margin: 0px;
     display: grid;
-    grid-template-columns: var(--aside-width) 1fr;
+    grid-template-columns: 1fr;
     grid-template-rows:
         var(--header-height)
         1fr
         var(--footer-height);
     grid-template-areas:
-        "logo header"
-        "menu content"
-        "menu footer";
+        "header"
+        "content"
+        "footer";
     height: 100vh;
     background-color: #F5F5F5;
 }
 
-aside.logo {
-    grid-area: logo;
-}
-
 header.header {
     grid-area: header;
-}
-
-aside.menu-area {
-    grid-area: menu;
 }
 
 main.content {
@@ -54,36 +47,4 @@ main.content {
 
 footer.footer {
     grid-area: footer;
-}
-
-@media(max-width: 768px) {
-    .app {
-        grid-template-rows:
-            var(--header-height)
-            var(--menu-top-height)
-            1fr
-            var(--footer-height);
-        grid-template-columns: var(--aside-width) 1fr;
-        grid-template-areas:
-            "logo header"
-            "menu menu"
-            "content content"
-            "footer footer";
-    }
-}
-
-@media(max-width: 576px) {
-    .app {
-        grid-template-rows:
-            var(--logo-height)
-            var(--menu-top-height)
-            1fr
-            var(--footer-height);
-        grid-template-columns: 1fr;
-        grid-template-areas:
-            "logo"
-            "menu"
-            "content"
-            "footer";
-    }
 }

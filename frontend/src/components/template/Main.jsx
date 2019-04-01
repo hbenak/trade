@@ -4,10 +4,12 @@ import Header from './Header'
 
 export default props =>
     <React.Fragment>
-        <Header {...props} />
+        <Header />
         <main className="content container-fluid">
-            <div className="p-3 mt-3">
-                {props.children}
+            <div className="row w-100 bg-light">
+	    		<div className="col-12 col-md-10 offset-md-1">
+		            {props.children}
+            	</div>
             </div>
         </main>
     </React.Fragment>

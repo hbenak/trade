@@ -1,17 +1,18 @@
-aside.logo {
-    background-color: var(--bg-dark);
+.logo-box {
+    background-color: var(--bg-yellow);
     display: flex;
     justify-content: center;
     align-items: center;
+    width: var(--logo-width);
+    height: 55px;
+
 }
 
-aside.logo img {
-    padding: 0px 15px;
+.logo-box h1 {
+	margin: 0;
+}
+
+.logo-box img {
+    padding: 0px;
     width: 100%;
-}
-
-@media(max-width: 576px) {
-    aside.logo img {
-        width: 350px;
-    }
 }

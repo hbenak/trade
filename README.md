@@ -1,8 +1,8 @@
-# TESTE TÉCNICO DE REACT
+# TESTE TÉCNICO DE NODE/REACT
 #
-> Sistema para exemplificar a construção de um cadastro de produtos com inclusão de comentários desenvolvido em React!
->Em `catálogo` escolha um produto e insira seus comentários.
->Em `lojas` é possível ver uma lista com os endereços disponíveis.
+> Sistema de busca de produtos usando API do MeLi.
+>Na `caixa de busca` digite um termo e clique o botão ao lado (lupa).
+>Clicando em cada `item` é possível ver os detalhes desse produto.
 #
 
 Requisitos:
@@ -12,13 +12,13 @@ Requisitos:
 # Instalação
 ### Backend
 Através do TERMINAL (Mac) ou PROMPT (Windows) acessar a pasta `backend` e executar o seguite comando: `npm start`
-  - será executado o json-server na porta 3001
+  - será executado o server (express) na porta 3001
 
 ### Frontend
 Abrindo uma nova janela do TERMINAL (Mac) ou PROMPT (Windows) acessar a pasta `frontend` e executar o seguite comando: `npm start`
   - será executada aplicação na porta 3000
   - acessar pelo browser http://localhost:3000/
 
-Você poderá também executar `npm run build` para geralos arquivos para produção.
+Você poderá também executar `npm run build` para gerar os arquivos para produção.
 
 **Dúvidas? entre em contato: hbenak@gmail.com**
